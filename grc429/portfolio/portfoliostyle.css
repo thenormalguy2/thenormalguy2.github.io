@@ -1,0 +1,139 @@
+/*CSS DOCUMENT*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+div.container {
+    max-width: 42em;
+    padding: 5em;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 1em;    
+    font-size: 1em; 
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+}
+
+nav ul li a {
+    color: rgb(30, 30, 30);  
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    color: rgb(140, 30, 30); 
+    border-bottom: solid 2px;
+}
+
+img {
+    width: 75%; 
+}
+
+h1 { 
+    color: rgb(30, 30, 30); 
+    font-size: 2.5em; 
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 0em 0em 0.7em 0em;
+}
+
+div.top p {
+    padding: 0;
+}
+
+h2 { 
+    color: rgb(30, 30, 30); 
+    font-size: 1.5em; 
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 2em 0em 0.5em 0em;
+}
+
+h3 { 
+    color: rgb(30, 30, 30); 
+    font-size: 1.2em; 
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 3em 0em 1em 0em;
+}
+
+div.evernote h3 {
+    padding: 0;
+}
+
+h4 { 
+    color: rgb(30, 30, 30); 
+    font-size: 1.1em; 
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 0em 0em 0.5em 0em;
+}
+
+h5 { 
+    color: rgb(30, 30, 30); 
+    font-size: 1em; 
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 0em 0em 0.2em 0em;
+}
+
+p {
+    color: rgb(30, 30, 30);
+    font-size: 1em; 
+    font-family: sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    padding: 0em 0em 1em 0em;
+}   
+
+li {
+    color: rgb(30, 30, 30); 
+    font-size: 1em; 
+    font-family: sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    padding: 0em 0em 0.2em 0em;
+}
+
+ul {
+    color: rgb(30, 30, 30); 
+    padding-bottom: 1em;
+    list-style: square;
+    list-style-position: inside;
+}
+
+@media only screen and (min-width: 42em) {
+
+  div.container {
+    margin: auto;
+  }
+
+}
