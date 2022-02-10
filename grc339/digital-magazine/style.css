@@ -1,0 +1,137 @@
+@import url("https://use.typekit.net/zag6krx.css");
+
+/*CSS document*/
+
+body {
+  background-color: #3e3e43;
+  padding: 1em;
+  color: white;
+}
+
+div.container {
+  max-width: 40em;
+  margin: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: rgb(220, 220, 220);
+}
+
+nav ul li {
+  color: rgb(220, 220, 220);
+  font-size: 1em;
+  line-height: 1.3em;
+  font-family: "apparat light", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav ul li a {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #7eede7;
+  border-bottom: solid 2px;
+}
+
+section {
+  background-color: rgb(80, 80, 80);
+  margin-top: 2em;
+  padding-bottom: 0.8em;
+}
+
+section h3,
+section p {
+  padding: 0em 1em 0em;
+}
+
+div.noimages h3 {
+  padding-top: 1.8em;
+}
+
+figure {
+  background-color: rgb(80, 80, 80);
+  margin-top: 2em;
+  padding-bottom: 0.8em;
+}
+
+article figcaption {
+  padding: 1em 0.5em 0em;
+}
+
+article {
+  margin-top: 3em;
+}
+
+h1 {
+  color: #7eede7;
+  font-size: 2em;
+  line-height: 1.2em;
+  font-family: "apparat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  color: rgb(220, 220, 220);
+  font-size: 1.6em;
+  line-height: 1.3em;
+  font-family: "apparat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3 {
+  color: rgb(220, 220, 220);
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: "apparat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+figcaption {
+  color: rgb(220, 220, 220);
+  font-size: 0.9em;
+  line-height: 1.2em;
+  font-family: "apparat light", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+p {
+  color: rgb(220, 220, 220);
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: "apparat light", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding: 0.2em 0em 0.2em 0em;
+}
+
+footer {
+  color: rgb(220, 220, 220);
+  font-size: 0.7em;
+  line-height: 1em;
+  font-family: "apparat light", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-top: 0.5em;
+}
