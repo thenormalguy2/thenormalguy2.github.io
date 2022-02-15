@@ -123,22 +123,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(30, 30, 140);
+  color: #0000eb;
   border-bottom: solid 2px;
-}
-
-div.landscapecontainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-div.landscapetext {
-  flex: 1 0 75%;
-}
-
-div.landscapepic {
-  flex: 1 0 75%;
 }
 
 img {
@@ -163,7 +149,7 @@ h2 {
   font-size: 1.5em;
   font-family: sans-serif;
   font-weight: 900;
-  padding: 2em 0em 0.5em 0em;
+  padding: 1em 0em 0.5em 0em;
 }
 
 h3 {
@@ -171,7 +157,7 @@ h3 {
   font-size: 1.2em;
   font-family: sans-serif;
   font-weight: 900;
-  padding: 3em 0em 1em 0em;
+  padding: 1em 0em 0.5em 0em;
 }
 
 div.evernote h3 {
