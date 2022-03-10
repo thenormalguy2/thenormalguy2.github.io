@@ -175,8 +175,6 @@ div.photogallery input {
 
 /* Newsletter */
 div.newsletter {
-  color: rgb(220, 220, 220);
-  font-size: 1em;
   line-height: 1.4em;
   font-family: "apparat light", sans-serif;
   font-weight: 200;
@@ -192,8 +190,10 @@ div.newsletter section.personal-info ul li input[type="text"],
 div.newsletter section ul li input[type="email"],
 div.newsletter section ul li input[type="tel"],
 div.newsletter section ul li select {
-  flex: 1 0 40em;
+  flex: 1 0 75%;
   box-sizing: border-box;
+  height: 2.5em;
+  padding-left: 1em;
 }
 
 div.newsletter section.personal-info ul li label {
@@ -206,9 +206,9 @@ div.newsletter section.method ul {
   flex-wrap: wrap;
 }
 
-div.newsletter section.order ul li,
-div.newsletter section.method ul li {
-  flex: 1 0 15em;
+div.newsletter section.subscription ul li,
+div.newsletter section.weekly {
+  line-height: 2em;
 }
 
 div.newsletter ul {
@@ -216,14 +216,26 @@ div.newsletter ul {
   list-style-type: none;
 }
 
+div.newsletter section.subscription label {
+  padding-left: 0.4em;
+}
+
 div.newsletter section {
   background: rgb(80, 80, 80);
-  padding: 1em;
+  padding: 1em 2em;
   margin-bottom: 1em;
 }
 
 div.newsletter section p {
   margin-top: 0;
+  padding-left: 0em;
+  line-height: 0.3em;
+  padding-bottom: 0.5em;
+}
+
+div.newsletter section.submit p {
+  padding: 1em 0em 1em 0em;
+  line-height: 1.4em;
 }
 
 div.newsletter textarea {
@@ -234,6 +246,15 @@ div.newsletter textarea {
   background: rgb(210, 210, 210);
   border: 1px solid rgb(200, 200, 200);
   padding: 0.4em;
+}
+
+div.newsletter button {
+  margin: 1em 0em;
+  padding: 0.5em 1em;
+  color: rgb(80, 80, 80);
+  font-family: "apparat light", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 /* Copyright */
@@ -260,30 +281,33 @@ footer {
 
   div.newsletter {
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 0 3em;
   }
 
   div.newsletter section.personal-info {
-    grid-column: 1/4;
+    grid-column: 1/3;
   }
 
   div.newsletter section.subscription {
-    grid-column: 1/3;
+    grid-column: 1/2;
   }
 
   div.newsletter section.weekly {
-    grid-column: 3/4;
+    grid-column: 2/3;
   }
 
   div.newsletter section.submit {
-    grid-column: 1/4;
-  }
-
-  header {
     grid-column: 1/3;
   }
 
+  header {
+    grid-column: 1/4;
+  }
+
   div.logo {
-    width: 60%;
+    width: 50%;
   }
 
   nav li {
