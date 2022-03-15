@@ -117,7 +117,7 @@ nav ul li {
   padding-right: 0.9em;
 }
 
-nav ul li a {
+a {
   color: rgb(30, 30, 30);
   text-decoration: none;
 }
@@ -203,6 +203,10 @@ ul {
   padding-bottom: 1em;
   list-style: square;
   list-style-position: inside;
+}
+
+div.underline a {
+  border-bottom: solid 1px;
 }
 
 @media only screen and (min-width: 40em) {
