@@ -83,12 +83,12 @@ h2 {
   font-size: 1.7em;
   line-height: 1.3em;
   color: #d8d9dc;
-  padding: 0.6em 0em 0.3em 1em;
+  padding: 0.6em 2em 0.3em 1em;
   font-weight: 600;
   background-color: #c02726;
-  border: 0.5px solid;
+  /* border: 0.5px solid; */
   border-radius: 15px;
-  border-color: #c02726;
+  /* border-color: #c02726; */
 }
 
 h3 {
@@ -115,6 +115,7 @@ strong {
 
 footer {
   font-size: 0.8em;
+  line-height: 1.3em;
   padding: 4em 0em 0.3em 0em;
 }
 
@@ -191,8 +192,8 @@ div.theme-toggle span {
   padding: 0.6em;
   margin-left: 0.5em;
   text-align: center;
-  bottom: 1.2em;
-  right: 50px;
+  bottom: 1em;
+  right: 1em;
   cursor: pointer;
   box-shadow: 2px 3px 10px 0 rgb(10, 10, 10);
 }
@@ -236,6 +237,7 @@ section.mission span.focus {
 
 ul.contact-info {
   list-style-type: none;
+  padding: 0em;
 }
 
 section.landing-image {
@@ -253,7 +255,7 @@ section.slogan div.outline {
 }
 
 section.mission div.outline {
-  padding: 2em 4em 2em 1em;
+  padding: 2em 2em 2em 1em;
 }
 
 /* About */
@@ -284,11 +286,11 @@ section.nutrition div.outline {
 }
 
 section.nutrition ul.left {
-  flex: 1 0 40%
+  flex: 1 0 42%
 }
 
 section.nutrition ul.right {
-  flex: 1 0 60%;
+  flex: 1 0 58%;
 }
 
 section.nutrition span {
