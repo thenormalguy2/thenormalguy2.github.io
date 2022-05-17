@@ -135,7 +135,7 @@ nav ul li {
 
 nav ul li a:hover {
   border-bottom: solid 2px;
-  font-weight: 750;
+  /* font-weight: 750; */
   color: #c02726;
 }
 
@@ -174,20 +174,24 @@ div.background h3, div.background h4 {
 }
 
 /* Theme toggle */
-div.theme-toggle a {
+div.theme-toggle input {
+  display: none;
+}
+
+div.theme-toggle span {
   color: #d8d9dc;
   position: fixed;
   font-size: 1.8em;
   background-color: #c02726;
   border: 0.1rem solid;
   border-radius: 50%;
-  border-color: #c02726;
+  border: none;
   height: 1em;
   width: 1em;
-  padding: 0.5em;
+  padding: 0.6em;
   margin-left: 0.5em;
   text-align: center;
-  top: 1.2em;
+  bottom: 1.2em;
   right: 50px;
   cursor: pointer;
   box-shadow: 2px 3px 10px 0 rgb(10, 10, 10);
@@ -305,7 +309,7 @@ section.nutrition span.fa-cheese, section.nutrition svg {
 div.menu svg {
   /* padding-top: 0.5em; */
   /* display: inline-block; */
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 div.special div.outline {
@@ -408,6 +412,7 @@ section.send button {
   padding: 0.7em 0em 0.5em 0em;
   cursor: pointer;
 }
+
 
 /* Desktop screens */
 @media only screen and (min-width: 50em) {
@@ -529,7 +534,7 @@ section.send button {
   }
 }
 
-/* Dark mode */
+/* Dark mode on dark browser */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #262626;
@@ -542,13 +547,13 @@ section.send button {
     color: #262626;
   }
   
-  /* Header dark mode */
+  /* Header dark mode on dark browser */
   .logo {
-    filter: invert(1) hue-rotate(180deg)
+    filter: invert(100%) hue-rotate(180deg) brightness(102%);
   }
   
   .light .logo {
-    filter: invert(0) hue-rotate(180deg)
+    filter: invert(0);
   }
 
   a {
@@ -559,7 +564,7 @@ section.send button {
     color: #262626;
   }
 
-  /* Main page dark mode */
+  /* Main page dark mode on dark browser */
   section.welcome {
     border-color: #d8d9dc;
   }
@@ -568,7 +573,7 @@ section.send button {
     border-color: #262626;
   }
 
-  /* Buttons and boxes dark mode */
+  /* Buttons and boxes dark mode on dark browser */
   div.outline {
     border-color: #d8d8d8;
   }
@@ -589,7 +594,7 @@ section.send button {
     color: #d8d8d8;
   }
 
-  /* Menu dark mode */
+  /* Menu dark mode on dark browser */
   div.menu div.outline h3 span, section.nutrition div.outline span {
     color: #afbf40;
   } 
@@ -598,7 +603,7 @@ section.send button {
     color: #3360a6;
   } 
 
-  /* Contact page dark mode */
+  /* Contact page dark mode on dark browser */
   div.contact ul.contact-info {
     border-color: #d8d8d8;
   }
@@ -607,3 +612,41 @@ section.send button {
     border-color: #262626;
   } 
 }
+
+/* Dark mode from dark toggle on light browser */
+body.dark {
+  background-color: #262626;
+  color: #d8d9dc;
+  border-color: #d8d9dc;
+}
+
+.dark div.logo a {
+  filter: invert(100%) hue-rotate(180deg) brightness(102%);
+}
+
+.dark a {
+  color: #d8d8d8;
+}
+
+.dark section.welcome {
+  border-color: #d8d9dc;
+}
+
+.dark div.outline {
+  border-color: #d8d8d8;
+}
+
+.dark div.background {
+  border-color: #afbf40;
+  background-color: #afbf40;
+  color: #262626;
+}
+
+.dark div.menu div.outline h3 span, .dark section.nutrition div.outline span {
+  color: #afbf40;
+} 
+
+.dark div.contact ul.contact-info {
+  border-color: #d8d8d8;
+}
+
